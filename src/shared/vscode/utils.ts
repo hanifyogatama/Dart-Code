@@ -123,7 +123,7 @@ class EnvUtils {
 			fakeScheme = isSecure ? "https" : "http";
 
 		const url = new URL(uriToString(uri));
-
+		
 		// Ensure the URL always has a port, as some cloud providers fail to expose URLs correctly
 		// that don't have explicit port numbers.
 		//
